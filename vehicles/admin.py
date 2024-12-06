@@ -8,10 +8,9 @@ admin.site.unregister(User)
 admin.site.unregister(Group)
 
 # Twilio configuration
-TWILIO_ACCOUNT_SID = "ACda8bf1e34f96c33c845738c7a8d8663d"
-TWILIO_AUTH_TOKEN = "6fecfb4510e49060fd81148221e2643b"
-TWILIO_PHONE_NUMBER = "+17753735261"
-
+TWILIO_ACCOUNT_SID = "ssid"
+TWILIO_AUTH_TOKEN = "auth_token"
+TWILIO_PHONE_NUMBER = "phone_number"
 # Custom admin action to send SMS
 def send_sms_action(modeladmin, request, queryset):
     client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
