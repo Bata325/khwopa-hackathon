@@ -69,9 +69,9 @@ def send_sms(vehicle_number, message, is_followup=False):
         return
 
     
-    account_sid = "ACda8bf1e34f96c33c845738c7a8d8663d"
-    auth_token = "6fecfb4510e49060fd81148221e2643b"
-    twilio_number = "+17753735261"
+    account_sid = "sssid"
+    auth_token = "token"
+    twilio_number = "number"
     client = Client(account_sid, auth_token)
 
     try:
